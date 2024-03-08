@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="{{url_for('static' , filename='theme.css')}}">
+        <title>Chemistry</title>
+    </head>
+    <body>
+        <center>
+            <h1>Get Structures by entering IUPAC or Common Name</h1><br>
+            <form action="{{ url_for('search') }}" method="post">
+                IUPAC / Common Name: <input type="text" name="query" placeholder="IUPAC">
+                <input type="submit" placeholder="&#xF002; ">
+            </form>
+        </center>
+    </body>
+</html>

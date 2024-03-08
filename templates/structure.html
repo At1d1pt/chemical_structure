@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>{{ iupac }}</title>
+        <link rel="stylesheet" href="{{url_for('static' , filename='theme.css')}}">
+    </head>
+
+    <body>
+        <center>
+            <h2>
+                IUPAC / Common Name: {{  iupac  }}<br>
+            </h2>
+
+            <img src="{{url_for('static', filename='request.png')}}" alt="structure"><br>
+            <h3>ALSO KNOWN AS</h3><br>
+            {{  names  }}
+
+        </center>
+    </body>
+</html>
